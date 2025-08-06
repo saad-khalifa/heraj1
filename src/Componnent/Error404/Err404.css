@@ -1,0 +1,117 @@
+.page_404{
+    padding: 40px 0;
+    background-color: #fff;
+    font-family:"Arvo", serif;
+}
+.page_404 img{
+    width: 100%;
+}
+.four_zero_four-bg{
+    background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 400px;
+    background-position: center;
+}
+.four_zero_four-bg h1{
+    font-size: 80px;
+}
+.four_zero_four-bg h3{
+    font-size: 80px;
+}
+.link_404{
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+.content_box_404{
+    margin-top: -50px;
+}
+/* إعدادات الوضع الفاتح */
+:root {
+  --bg-light: #ffffff;
+  --text-light: #000000;
+  --link-light: #007bff;
+  --bg-dark: #121212;
+  --text-dark: #ffffff;
+  --link-dark: #0d6efd;
+}
+
+/* تحديد ألوان الوضع الليلي والفاتح */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.page_404 {
+  padding: 60px 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.page_404 .four_zero_four-bg {
+  background-color: var(--bg-light);
+  border-radius: 5px;
+}
+
+.page_404 .four_zero_four-bg h1 {
+  font-size: 100px;
+  margin: 0;
+  color: var(--text-light);
+}
+
+.page_404 .content_box_404 h3 {
+  font-size: 30px;
+  color: var(--text-light);
+}
+
+.page_404 .content_box_404 p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.page_404 .link_404 {
+  color: var(--link-light);
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.page_404 .link_404:hover {
+  color: var(--link-dark);
+}
+
+/* الوضع الليلي */
+body.dark-mode .page_404 {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .page_404 .four_zero_four-bg {
+  background-color: var(--bg-dark);
+}
+
+body.dark-mode .page_404 .four_zero_four-bg h1 {
+  color: var(--text-dark);
+}
+
+body.dark-mode .page_404 .content_box_404 h3 {
+  color: var(--text-dark);
+}
+
+body.dark-mode .page_404 .content_box_404 p {
+  color: var(--text-dark);
+}
+
+body.dark-mode .page_404 .link_404 {
+  color: var(--link-dark);
+}
+
+body.dark-mode .page_404 .link_404:hover {
+  color: var(--link-light);
+}

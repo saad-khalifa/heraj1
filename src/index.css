@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Lato",sans-serif !important ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+  color: #000000;
+}
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark .card,
+body.dark .form-control,
+body.dark .list-group-item {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+body.dark .form-select {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  margin: 0 auto;
+}
+/* مثال: عند وجود كلاس 'dark' على عنصر الأب (مثلاً body أو nav) */
+.navbar-dark,
+.dark {
+  color: white;
+}
+
+/* لون النصوص داخل كل الحقول في الوضع الليلي */
+.dark input,
+.dark textarea,
+.dark select,
+.dark .form-control {
+  color: white;
+  background-color: #333; /* خلفية داكنة حتى تظهر الكتابة بوضوح */
+  border-color: #555; /* لون إطار داكن متناسق */
+}
+
+/* placeholder بلون رمادي فاتح في الوضع الليلي */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #bbb;
+}
+
+/* لتغيير لون النص داخل العناصر الأخرى إن أردت */
+.dark a,
+.dark label,
+.dark p,
+.dark span,
+.dark div {
+  color: white;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

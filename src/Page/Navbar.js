@@ -134,7 +134,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container-fluid">
-        <Link className=" fw-bold" style={{ textDecoration:'none' }} to="/">
+        <Link className=" fw-bold" style={{ textDecoration:'none',color: 'white' }} to="/">
           حراج سوريا
         </Link>
 
@@ -145,7 +145,7 @@ const Navbar = () => {
 
     {/* رسائل المستخدمين */}
     <Link to="/messages" className="position-relative btn btn-sm d-flex align-items-center justify-content-center p-1" title="رسائل">
-      <i className="bi bi-envelope-fill fs-6"></i>
+      <i className="bi bi-envelope-fill fs-6" style={{ color:'white' }}></i>
       {userMessagesCount > 0 && (
         <span
           className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"

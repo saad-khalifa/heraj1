@@ -139,7 +139,7 @@ const Navbar = () => {
         </Link>
 
         {/* العناصر تظهر فقط في الشاشات الصغيرة */}
-        {user && (
+         
   <div className="d-flex d-lg-none align-items-center gap-2">
 
 
@@ -175,7 +175,7 @@ const Navbar = () => {
     <Link to="/profile" title="الملف الشخصي" className="d-flex align-items-center justify-content-center">
       <img
         src={
-          user.profile_image
+        user && user.profile_image
             ? `http://localhost:8000/storage/${user.profile_image}`
             : 'https://cdn-icons-png.flaticon.com/512/149/149071.png'
         }
@@ -191,7 +191,7 @@ const Navbar = () => {
       />
     </Link>
   </div>
-)}
+
 
 
         <button

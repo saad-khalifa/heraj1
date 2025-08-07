@@ -133,7 +133,7 @@ const Navbar = () => {
         theme === 'dark' ? 'dark' : 'primary'
       }`}
     >
-      <div className="container-fluid px-3">
+      <div className="container-fluid px-1">
         <Link className="navbar-brand fw-bold" to="/">
           حراج سوريا
         </Link>

@@ -133,18 +133,18 @@ const Navbar = () => {
         theme === 'dark' ? 'dark' : 'primary'
       }`}
     >
-      <div className="container-fluid px-1">
-        <Link className="navbar-brand fw-bold" to="/">
+      <div className="container-fluid">
+        <Link className=" fw-bold" style={{ textDecoration:'none' }} to="/">
           حراج سوريا
         </Link>
 
         {/* العناصر تظهر فقط في الشاشات الصغيرة */}
          
-  <div className="d-flex d-lg-none align-items-center gap-2">
+  <div className="d-flex d-lg-none align-items-center gap-1">
 
 
     {/* رسائل المستخدمين */}
-    <Link to="/messages" className="position-relative btn btn-outline-light btn-sm d-flex align-items-center justify-content-center p-2" title="رسائل">
+    <Link to="/messages" className="position-relative btn btn-sm d-flex align-items-center justify-content-center p-1" title="رسائل">
       <i className="bi bi-envelope-fill fs-6"></i>
       {userMessagesCount > 0 && (
         <span
@@ -164,7 +164,7 @@ const Navbar = () => {
     {/* تغيير الثيم */}
     <button
       onClick={toggleTheme}
-      className="btn btn-outline-light btn-sm d-flex align-items-center justify-content-center p-2"
+      className="btn  btn-sm d-flex align-items-center justify-content-center p-1"
       title="تغيير الثيم"
       style={{ fontSize: '1rem', lineHeight: 1 }}
     >
@@ -172,7 +172,7 @@ const Navbar = () => {
     </button>
 
     {/* الملف الشخصي */}
-    <Link to="/profile" title="الملف الشخصي" className="d-flex align-items-center justify-content-center">
+    <Link to="/profile" title="الملف الشخصي" className="d-flex align-items-center justify-content-center p-2">
       <img
         src={
         user && user.profile_image
@@ -185,7 +185,7 @@ const Navbar = () => {
           width: '30px',
           height: '30px',
           objectFit: 'cover',
-          border: '2px solid #fff',
+          border: '1px solid #fff',
           cursor: 'pointer',
         }}
       />
